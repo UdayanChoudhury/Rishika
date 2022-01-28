@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Manjari', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  color: #444;
+  background: #ffe7e3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.word {
+  color: #fc9786;
+  transition: transform 0.8s;
+  cursor: pointer;
+  display: inline-block;
+  animation: animate2 1.2s infinite alternate;
+}
+
+@keyframes animate2 {
+  from {
+    color: #fc9786;
+    transform: translateY(0);
+  }
+  to {
+    color: #df3a1d;
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.btn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: transform 0.5s ease;
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.2rem;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.2) !important;
+}
+
+.btn_1 a {
+  color: red !important;
+}
+
+.btn_2 a {
+  color: green;
+}
+
+.logo {
+  display: inline-block;
+
+  animation: animate 1.2s alternate infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.9) translateY(0);
+  }
+
+  100% {
+    transform: scale(1.3) translateY(-10px);
+    /* color:#fc9786; */
+  }
+}
